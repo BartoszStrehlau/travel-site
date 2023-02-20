@@ -4,4 +4,14 @@
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+
+    &--medium{
+        /* 976 - size of the picutre*/
+        max-width: 976px;
+    }
+    /* If wrapper class is nested inside of another wrapper*/
+    .wrapper{
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
