@@ -9,3 +9,5 @@
 /*modules*/
 @import './modules/_large-hero.css';
 @import './modules/_btn.css';
+@import './modules/_wrapper';
+@import './modules/_page-section.css';
