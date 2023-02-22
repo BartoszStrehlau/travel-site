@@ -37,7 +37,7 @@
     }
 /* em scales with text font-size while rem scales with page size*/
     &--b-margin-small{
-        margin-bottom: .5em;
+        margin-bottom: .4em;
     }
 
     &--b-margin-large{
