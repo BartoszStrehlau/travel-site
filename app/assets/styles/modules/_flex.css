@@ -1,0 +1,36 @@
+.flex{
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+
+  @mixin atMedium{
+    flex-flow: row;
+  }
+
+  &__item{
+    display: inherit;
+    flex-direction: column;
+
+    &--b-margin-until-medium{
+      margin-bottom: 1rem;
+    }
+
+    @mixin atMedium {
+      justify-content: space-around;
+      margin: 0 2rem;
+
+      &--one-third-larger{
+        width: 37%;
+      }
+
+      &--half{
+        width: 50%;
+        margin: 0 4rem;
+      }
+      
+      &--two-third-smaller{
+        width: 63%;
+      }
+    }
+  }
+}
