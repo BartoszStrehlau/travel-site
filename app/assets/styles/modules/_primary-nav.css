@@ -1,19 +1,22 @@
 .primary-nav{
-    ul{
-        margin: 0;
-        padding: 0;
-        @mixin clearfix
+     ul{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        margin: 0px;
+        padding: 0px;
+        /* @mixin clearfix */
     }
 
     li{
         list-style: none;
-        float: left;
+        /* float: left; */
         padding-right: 20px;
     }
     
-    &--pull-right{
+    /* &--pull-right{
         float: right;
-    }
+    } */
 
     a{
         color: #FFF;
@@ -21,5 +24,5 @@
         font-weight: 300;
         display: block;
         padding: 10px 0;
-    }
+    } 
 }
