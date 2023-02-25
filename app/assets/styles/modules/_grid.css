@@ -13,6 +13,7 @@
         column-gap: 2rem;
         &__one-third{
             grid-column: span 1;
+            margin-bottom: 0;
         }
 
         &__two-third{
