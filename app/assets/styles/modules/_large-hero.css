@@ -8,7 +8,7 @@
 
     &__text-content{
         position: absolute;
-        top: 50%;
+        top: 60%;
         transform: translateY(-50%);
         left: 0;
         width: 100%;

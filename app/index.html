@@ -75,8 +75,8 @@
         assets/images/first-trip-hi-dpi.jpg 1952w" 
         alt="Couple walking down a street.">
       </div>
-      <div class="flex">
-        <picture class="flex__item flex__item--one-third-larger flex__item--b-margin-until-medium">
+      <div class="grid">
+        <picture class="grid__one-third grid--b-margin-until-medium grid--display-block">
           <source sizes="404px" srcset="
           assets/images/our-start.jpg 404w, assets/images/our-start-hi-dpi.jpg 808w" 
           media="(min-width: 1020px)">
@@ -88,7 +88,7 @@
           alt="Our founder, Jane Doe">
         </picture>
 
-        <div class="flex__item flex__item--two-third-smaller">
+        <div class="grid__two-third">
           <div class="generic-content-container">
             <h2 class="headline headline--centered headline--no-t-margin headline--b-margin-small">Here&rsquo;s how we got started&hellip;</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <a href="#">quis nostrud exercitation</a> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -107,32 +107,32 @@
         <img class="section-title__icon" src="assets/images/icons/star.svg"> Our <strong>Features</strong>
       </h2>
       <div class="flex generic-content-container">
-        <div class="flex__item flex__item--half">
-          <div class="feature-item">
+        <!-- <div class="flex__item--half"> -->
+          <div class="flex__item--half feature-item">
             <img class="feature-item__icon" src="assets/images/icons/rain.svg">
             <h3 class="feature-item__title">We&rsquo;ll Watch the Weather</h3>
             <p>Download our app and we&rsquo;ll send you a notice if it&rsquo;s about to rain in the next 20 minutes around your current location. A good rain can be refreshing, but sometimes you just want to stay dry.</p>
           </div>
 
-          <div class="feature-item">
+          <div class="flex__item--half feature-item">
             <img class="feature-item__icon" src="assets/images/icons/globe.svg">
             <h3 class="feature-item__title">Global Guides</h3>
             <p>We&rsquo;ve scoured the entire planet for the best retreats and beautiful vistas. If there&rsquo;s a corner of the world you want to escape to we know the most scenic and inspiring locations.</p>
           </div>
-        </div>
+        <!-- </div> -->
         
-        <div class="flex__item flex__item--half">
-          <div class="feature-item">
+        <!-- <div class=""> -->
+          <div class="flex__item--half feature-item">
             <img class="feature-item__icon" src="assets/images/icons/wifi.svg">
             <h3 class="feature-item__title">Wi-Fi Waypoints</h3>
             <p>We only send you on trips to places we can personally vouch for as being amazing. Which means we&rsquo;ve mapped out where local wi-fi spots are and marked them in our app&rsquo;s map view.</p>
           </div>
-          <div class="feature-item">
+          <div class="flex__item--half feature-item">
             <img class="feature-item__icon" src="assets/images/icons/fire.svg">
             <h3 class="feature-item__title">Survival Kit</h3>
             <p>Everytime you book an escape with us we send you a survival kit with the finest materials. The kit will allow you to setup a tent, start a fire, scratch your own back and lower your taxes.</p>
           </div>
-        </div>
+        <!-- </div> -->
       </div>
     </div>
   </div>
