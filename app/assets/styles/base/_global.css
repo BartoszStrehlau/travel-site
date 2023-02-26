@@ -10,12 +10,10 @@ img {
 html {
     box-sizing: border-box;
 }
-
-*, *:before, *:after {
-    box-sizing: inherit;
-    /* background: rgba(0 100 0 /0.1) !important; */
-}
-
 a {
     color: $mainOrange;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    background: rgba(0 50 50 /0.1) !important;
 }
