@@ -15,5 +15,11 @@
 
     &__icon{
         margin-right: .5rem;
+        position: relative;
+        top: 8px;
+    }
+    
+    &--blue{
+        color: $mainBlue;
     }
 }
