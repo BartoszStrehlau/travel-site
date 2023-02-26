@@ -7,10 +7,13 @@ img {
     height: auto;
 }
 
-* {
+html {
     box-sizing: border-box;
 }
-
 a {
     color: $mainOrange;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    background: rgba(0 50 50 /0.1) !important;
 }

@@ -1,0 +1,23 @@
+.grid{
+    
+    &--display-block{
+        display: block;
+    }
+    &--b-margin-until-medium{
+        margin-bottom: 1rem;
+      }
+
+    @mixin atMedium {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+        &__one-third{
+            grid-column: span 1;
+            margin-bottom: 0;
+        }
+
+        &__two-third{
+            grid-column: span 2;
+        }
+    }
+}
