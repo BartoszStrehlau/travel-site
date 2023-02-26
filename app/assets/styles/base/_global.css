@@ -1,19 +1,22 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    /* background: rgba(0 50 50 /0.1) !important; */
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: #333;
 }
+
 img {
     max-width: 100%;
     height: auto;
 }
 
-html {
-    box-sizing: border-box;
-}
 a {
     color: $mainOrange;
-}
-*, *:before, *:after {
-    box-sizing: inherit;
-    background: rgba(0 50 50 /0.1) !important;
 }
