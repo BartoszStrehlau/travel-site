@@ -1,8 +1,7 @@
 .flex{
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
-  column-gap: 2rem;
+  justify-content: space-evenly;
 
   @mixin atMedium{
     flex-flow: row wrap;
@@ -11,9 +10,9 @@
   &__item{
     flex-grow: 1;
     
-    @mixin atMedium {
+    @mixin atLarge {
       &--half{
-        width: 43%;
+        width: clamp(37%, 43%, 50%); 
         margin: 0 2rem;
       }
     }
