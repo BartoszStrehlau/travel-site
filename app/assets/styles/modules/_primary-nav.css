@@ -1,23 +1,46 @@
 .primary-nav{
      ul{
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-end;
+        @mixin atLarge{
+            display: flex;
+            justify-content: flex-end;
+        }
         margin: 0px;
         padding: 0px;
     }
 
     li{
+        display: inline-block;
         list-style: none;
-        padding-right: 20px;
+        padding-right: 7px;
+
+        @mixin atLarge{
+            display: block;
+            padding-right: 20px;
+        }
     }
 
-    a{
-        
+    li:last-child{
+        padding-right: 0px;
+        @mixin atLarge{
+            padding-right: 20px;
+        }
+    }
+
+    a{ 
         color: #FFF;
         text-decoration: none;
         font-weight: 300;
         display: block;
-        padding: 10px 0;
+        padding: 5px 8px;
+        font-size: .8rem;
+        background-color: $mainBlueRGBADarker;
+
+        @mixin atLarge{
+            background-color: transparent;
+            padding: 10px 0;
+            font-size: 1rem;
+        }
+            
+    
     } 
 }
