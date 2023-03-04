@@ -5,6 +5,7 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
     /* background: rgba(0 50 50 /0.1) !important; */
+    /* outline: 1px solid black !important; */
 }
 
 body {
