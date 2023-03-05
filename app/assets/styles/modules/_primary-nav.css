@@ -1,9 +1,5 @@
 .primary-nav{
      ul{
-        @mixin atLarge{
-            display: flex;
-            justify-content: flex-end;
-        }
         margin: 0px;
         padding: 0px;
     }
@@ -12,9 +8,7 @@
         display: inline-block;
         list-style: none;
         padding-right: 7px;
-
         @mixin atLarge{
-            display: block;
             padding-right: 20px;
         }
     }

@@ -15,7 +15,7 @@
 
     &__btn-container{
         @mixin atLarge{
-            float: right;
+            order: 2;
         }
     }
 
@@ -120,7 +120,8 @@
         row-gap: 1rem;
 
         @mixin atLarge{
-            display: block;
+            display: flex;
+            justify-content: flex-end;
             opacity: 1;
             padding-top: 0;
             pointer-events: auto;
