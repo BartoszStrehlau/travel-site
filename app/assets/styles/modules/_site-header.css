@@ -99,17 +99,6 @@
         }
     }
 
-    @keyframes Scale {
-        from {
-            transform: scale(1.2);
-            opacity : 0;
-        }
-        to {
-            transform: scale(1);
-            opacity: 1;
-        }
-    }
-
     &__menu-content{
         opacity: 0;
         transition: opacity .3s ease-out;
@@ -132,7 +121,7 @@
             opacity: 1;
             visibility: visible;
             pointer-events: auto;
-            animation: Scale .3s ease-out;
+            animation: AppearAndScaleDown .3s ease-out;
         }
     }
 }

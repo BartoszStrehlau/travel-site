@@ -1,0 +1,7 @@
+.reveal-item{
+    visibility: hidden;
+    &--is-visible{
+        visibility: visible;
+        animation: AppearAndScaleDown 1.5s ease-out;  
+    }
+}
