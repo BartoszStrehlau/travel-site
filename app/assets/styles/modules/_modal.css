@@ -1,8 +1,9 @@
 .modal{
     opacity: 0;
+    transform: scale(1.2);
     visibility: hidden;
-    animation: AppearAndScaleDown .3s ease-out;
-    transition: visibility .3s ease-out;
+    transition: all .3s ease-out;
+    
     position: fixed;
     inset: 0;
     background-color: rgba(255,255,255, 0.94);
@@ -12,6 +13,7 @@
     &--is-visible{
         opacity: 1;
         visibility: visible;
+        transform: scale(1);
     }
 
     &__inner{

@@ -2,21 +2,29 @@ export class Modal {
     constructor() {
         this.injectHTML()
         this.modal = document.querySelector('.modal')
-        this.openModalButtons = document.querySelectorAll('.open-modal')
+        this.closeIcon = document.querySelector('.modal__close')
         this.events ()
     }
 
     events(){
-        //listen for open click
-            this.openModalButtons.forEach(el => el.addEventListener('click', event => this.openTheModal(event)))
         //listen for closing click
-
+            this.closeIcon.addEventListener('click', () => this.closeTheModal())
         //pushes any key
+            document.addEventListener('keyup', event => this.keyPressHandler(event))
     }
     
-    openTheModal(event){
-        event.preventDefault()
+    openTheModal(){
         this.modal.classList.add('modal--is-visible')
+    }
+
+    closeTheModal(){
+        this.modal.classList.remove('modal--is-visible')
+    }
+
+    keyPressHandler(event){
+        if(event.key == 27 || event.key == 'Escape'){
+            this.closeTheModal()
+        }
     }
 
     injectHTML(){
@@ -27,7 +35,7 @@ export class Modal {
                     <div class="wrapper wrapper--narrow">
                         <p class="modal__description">We will have an online order system in place soon. Until then, connect with us on any of the platforms below!</p>
                     </div>
-
+                    
                     <div class="social-icons">
                         <a href="#" class="social-icons__icon"><img src="assets/images/icons/facebook.svg" alt="Facebook"></a>
                         <a href="#" class="social-icons__icon"><img src="assets/images/icons/twitter.svg" alt="Twitter"></a>
