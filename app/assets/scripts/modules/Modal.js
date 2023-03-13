@@ -1,4 +1,4 @@
-export class Modal {
+export default class Modal {
     constructor() {
         this.injectHTML()
         this.modal = document.querySelector('.modal')
