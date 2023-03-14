@@ -1,4 +1,6 @@
-export default class Modal {
+//export default class Modal
+
+export class Modal {
     constructor() {
         this.injectHTML()
         this.modal = document.querySelector('.modal')
@@ -50,5 +52,3 @@ export default class Modal {
         `)
     }
 }
-
-{/*  */}
