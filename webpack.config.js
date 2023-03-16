@@ -1,4 +1,4 @@
-const currentTask = process.env.npm_lifecycle_event
+const currentTask = process.env.npm_lifecycle_event;
 const path =require('path')
 
 const postCSSPlugins = [
@@ -18,10 +18,11 @@ let config = {
                 use: ['style-loader', {loader: 'css-loader', options:{url:false}}, {loader: 'postcss-loader', options:{postcssOptions:{plugins: postCSSPlugins}}}]
             }
         ]
-    }
+    },
 }
 
-if (currentTask == 'dev'){
+if (currentTask === 'dev'){
+    config.mode = 'development',
     config.output = {
         filename: 'bundled.js',
         path: path.resolve(__dirname, 'app')
@@ -34,11 +35,10 @@ if (currentTask == 'dev'){
         hot: true,
         port: 3000,
         host: '0.0.0.0'
-    },
-    config.mode = "development"
+    }
 }
 
-if (currentTask == 'build'){
+if (currentTask === 'build'){
     config.output = {
         filename: 'bundled.js',
         path: path.resolve(__dirname, 'dist')
