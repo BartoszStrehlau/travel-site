@@ -22,7 +22,6 @@ let config = {
 }
 
 if (currentTask == 'dev'){
-
     config.output = {
         filename: 'bundled.js',
         path: path.resolve(__dirname, 'app')
